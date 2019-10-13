@@ -5,6 +5,14 @@ $(document).ready(function () {
 
 
     $('#userBtn').click(function () {
-        window.location = '/createOrder'
+        window.location = '/createorder'
+    })
+
+    $('#truckBtn').click(function() {
+        window.location = '/search'
+    })
+
+    $('#homeBtn').click(function() {
+        window.location = '/'
     })
 })

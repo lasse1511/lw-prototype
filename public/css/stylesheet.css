@@ -86,3 +86,19 @@ html, body {
 .row {
     border-color: #264A60;
 }
+
+
+.hover:hover{
+    cursor: pointer;
+}
+
+.tinyLbl{
+    font-size: 8pt; 
+}
+
+.headerBtn{
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    width: auto;
+}
