@@ -20,3 +20,11 @@ body {
 .footerSize{
     flex-shrink: 0;
 }
+.label{
+    width: 50px;
+}
+.label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+  }​
