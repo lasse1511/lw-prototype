@@ -113,15 +113,14 @@
             </div>
         </div>
 
-        <input type="submit" value="Submit" id="searchbtn">
+        <button type="submit" value="Submit" id="searchbtn">
 
     </form>
-    <button id="searchbtn">søg</button>
     <div>
         <% if (foundJobs) { %>
-        <ul id='resultul'>
-            <li>this is default</li>
-        </ul>
+        <table class='leepwaytable table'id='resulttable'>
+            
+        </table >
         <% } else { %>
         <label>Indtast søgeparametre</label>
         <% } %>
