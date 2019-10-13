@@ -34,6 +34,9 @@ html, body {
     max-width: 50%;
     min-height: 100%;
     position: fixed;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rightDiv{
@@ -44,6 +47,10 @@ html, body {
     background-size: cover;
     position: fixed;
     margin-left: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .column {
@@ -55,4 +62,24 @@ html, body {
     display: inline-block;
     width: 140px;
     text-align: right;
+}
+
+.startpagebtn{
+    width: auto;
+    max-width: 60%;
+    margin-bottom: 10%;
+    opacity: 0.7;
+}
+
+.startpagebtn:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+  
+.headerIcon {
+    height: 40px;
+}
+
+.footerIcon{
+    height: 20px;
 }
