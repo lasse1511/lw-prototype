@@ -45,3 +45,14 @@
        
     </div>
 </div>
+<div class='container'>
+    <% if (foundJobs) { %>
+    <ul>
+    <% foundJobs.forEach(function(job){ %>
+        <%- include('modules/searchResult', {job: job}); %>
+      <% }); %>
+    </ul>
+    <% } else { %>
+        <label>Indtast søgeparametre</label>
+        <% } %>
+</div>
