@@ -113,16 +113,14 @@
             </div>
         </div>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="searchbtn">
 
     </form>
-
+    <button id="searchbtn">søg</button>
     <div>
         <% if (foundJobs) { %>
-        <ul>
-            <% foundJobs.forEach(function(job){ %>
-            <%- include('modules/searchResult', {job: job}); %>
-            <% }); %>
+        <ul id='resultul'>
+            <li>this is default</li>
         </ul>
         <% } else { %>
         <label>Indtast søgeparametre</label>
