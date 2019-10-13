@@ -63,6 +63,8 @@ html, body {
   }
 
 .label {
+    color: #264A60;
+    font-weight: bold;
     display: inline-block;
     width: 140px;
     text-align: right;
@@ -161,3 +163,17 @@ html, body {
     color: #264A60;
     background: transparent;
 }
+.typesection{
+    border-style: 1px solid #264A60;
+    border-width: medium;
+}
+.inputStyle{
+    border: 1px solid #B9C1C9;
+    border-radius: 4px;
+    color:#576673;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
