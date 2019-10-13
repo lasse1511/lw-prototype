@@ -1,12 +1,11 @@
-var url = "/getJobs";
 $(document).ready(function () {
     $('#searchbtn').click(function () {
-        $.get(url, null, function (foundJobs) {
+        $.get("/getJobs", null, function (foundJobs) {
             $('#resulttable').empty();
             var tableHeader = "<thead><tr><th scope='col-md-2'>Opsamling</th><th scope='col-md-2'>Destination</th><th scope='col-md-2'>Gods</th><th scope='col-md-2'>Specielle Krav</th><th></th></tr></thead>"
             $('#resulttable').append(tableHeader);
             foundJobs.forEach(job => {
-                var tr = "<tbody><tr>"
+                var tr = "<tbody id="+job.id+"><tr>"
                 tr = tr + "<td scope='row'><div class='pickup'>" + job.pickUpLocation + "</div><div>" + job.pickUpDate + "</div></td>"
                 tr = tr + "<td scope='row'><div class='destination'>" + job.destination + "</div><div>" + job.ETADate + "</div></td>"
                 tr = tr + "<td scope='row'><div class='sizeAndQuantity'>" + job.quantity + "</div></td>"
@@ -39,5 +38,10 @@ $('#bidModal').on('show.bs.modal', function (event) {
     modal.find('.modal-body input').val(jobid)
 })
 
-
-
+$(document).ready(function () {
+    $('#acceptBidBtn').click(function () {
+        $.post("/postBid",{id:1,bid:2000}, function (result) {
+            
+        });
+    });
+});
