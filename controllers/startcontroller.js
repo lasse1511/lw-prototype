@@ -2,8 +2,10 @@
 exports.getStart = function(req, res) {
     res.render('start');
 }
+
 exports.getSearch = function(req,res){
-    res.render('search');
+    var foundJobs = require('../mocks/mockJobs').getJobs();
+    res.render('search',{foundJobs: foundJobs });
 }
 
 exports.getCreateOrder = function(req, res) {
