@@ -3,6 +3,17 @@ html, body {
     margin: 0;
   }
 
+  .customRow {
+    padding-bottom: 30px;
+}
+
+.ghostRow{
+    background: #5766732a;
+}
+.activeRow{
+    background: aliceblue;
+}
+
 .headerColor{
     background-color: #264A60;
     color: whitesmoke;
@@ -86,22 +97,19 @@ html, body {
     height: 40px;
 }
 
-.footerIcon{
-    height: 20px;
-}​
-.row {
-    border-color: #264A60;
-}
-
-
 .hover:hover{
     cursor: pointer;
 }
+.footerIcon{
+    height: 20px;
+}​
 
 .tinyLbl{
     font-size: 8pt; 
 }
-
+.marginTop{
+    margin-top:30px;
+}
 .headerBtn{
     border: 1px solid whitesmoke;
     background: transparent;
@@ -109,6 +117,10 @@ html, body {
     width: auto;
 }
 
+.headerBtn:hover{
+    color: #264A60;
+    background: white;
+}
 .btnShown {
     visibility: visible;
 }
@@ -171,6 +183,7 @@ html, body {
     border: 1px solid #B9C1C9;
     border-radius: 4px;
     color:#576673;
+    width: inherit;
 }
 #map {
     width: 100%;

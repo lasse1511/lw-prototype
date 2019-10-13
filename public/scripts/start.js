@@ -66,5 +66,78 @@ $(document).ready(function () {
     })
 
 
+    if($('#Pickup_Company')[0]){
+        $('#Pickup_Company').focus();
+    }
+    $('#row1').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row1').removeClass('ghostRow')
+        $('#row1').addClass('activeRow')
+    })
+    $('#row1').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row1').removeClass('ghostRow')
+        $('#row1').addClass('activeRow')
+    })
+    $('#row2').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row2').removeClass('ghostRow')
+        $('#row2').addClass('activeRow')
+    })
+    $('#row2').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row2').removeClass('ghostRow')
+        $('#row2').addClass('activeRow')
+    })
+    $('#row3').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row3').removeClass('ghostRow')
+        $('#row3').addClass('activeRow')
+    })
+    $('#row3').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row3').removeClass('ghostRow')
+        $('#row3').addClass('activeRow')
+    })
+    $('#row4').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row4').removeClass('ghostRow')
+        $('#row4').addClass('activeRow')
+    })
+    $('#row4').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row4').removeClass('ghostRow')
+        $('#row4').addClass('activeRow')
+    })
+    $('#row5').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row5').removeClass('ghostRow')
+        $('#row5').addClass('activeRow')
+    })
+    $('#row5').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row5').removeClass('ghostRow')
+        $('#row5').addClass('activeRow')
+    })
+    $('#row6').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row6').removeClass('ghostRow')
+        $('#row6').addClass('activeRow')
+    })
+    $('#row6').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row6').removeClass('ghostRow')
+        $('#row6').addClass('activeRow')
+    })
+    $('#row7').click(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row7').removeClass('ghostRow')
+        $('#row7').addClass('activeRow')
+    })
+    $('#row7').children().children().focus(function () {
+        $("[class*='activeRow']").removeClass('activeRow');
+        $('#row7').removeClass('ghostRow')
+        $('#row7').addClass('activeRow')
+    })
 
 })
