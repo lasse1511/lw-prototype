@@ -3,9 +3,9 @@
 <div class="container">
     <form>
         <div class="row">
-            <div class="col">
-                <label for="Pickup">Afhentnings adresse </label>
+            <div class="col-md-3">
                 <div class=col->
+                    <label>Afhentnings adresse</label><br>
                     <label>Landkode</label>
                 </div>
                 <div class=col->
@@ -20,9 +20,9 @@
                         size="10">
                 </div>
             </div>
-            <div class="col">
-                <label for="Pickup">Afhentnings tidspunkt </label>
+            <div class="col-md-3">                
                 <div class=col->
+                    <label >Afhentnings tidspunkt</label><br>
                     <label>Dato</label>
                 </div>
                 <div class=col->
@@ -37,9 +37,9 @@
                 </div>
             </div>
 
-            <div class="col">
-                <label for="Pickup">Levering </label>
+            <div class="col-md-3">                
                 <div class=col->
+                    <label >Levering </label><br>
                     <label>Landkode</label>
                 </div>
                 <div class=col->
@@ -54,9 +54,9 @@
                         size="10">
                 </div>
             </div>
-            <div class="col">
-                <label for="Deliver">Leverings tidspunkt </label>
+            <div class="col-md-3">
                 <div class=col->
+                    <label>Leverings tidspunkt</label><br>
                     <label>Dato</label>
                 </div>
                 <div class=col->
@@ -70,11 +70,14 @@
                     <input type="time" id="Deliver_End_Time" name="Deliver_End_Time">
                 </div>
             </div>
+            <div class="col-md-12">
+                <br>
+                
+            </div>
 
-
-            <div class="col">
-                <label for="Gods">Gods </label>
+            <div class="col-md-3">
                 <div class=col->
+                    <label>Gods</label><br>
                     <label>Ladmeter</label>
                 </div>
                 <div class=col->
@@ -90,8 +93,8 @@
                 </div>
 
             </div>
-            <div class="col">
-                <label>Transporttype</label>
+            <div class="col-md-3">
+                    <label>Transporttype</label>
                 <div class=col->
                     <select id="TransportTypeList">
                         <option value="1">Vej</option>
@@ -100,7 +103,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-3">
                 <label>Specielle</label>
                 <div class=col->
                     <input type="radio" name="Special_Requirements" value="Box_Trailer" checked> Box trailer<br>
