@@ -96,7 +96,6 @@ html, body {
   
 .headerIcon {
     height: 40px;
-    padding:10px;
 }
 
 .hover:hover{
@@ -181,11 +180,16 @@ html, body {
     border-style: 1px solid #264A60;
     border-width: medium;
 }
-.inputStyle{
+.inputStyleCreateOrder{
     border: 1px solid #B9C1C9;
     border-radius: 4px;
     color:#576673;
     width: inherit;
+}
+.inputStyleSearch{
+    border: 1px solid #B9C1C9;
+    border-radius: 4px;
+    color:#576673;
 }
 #map {
     width: 100%;
