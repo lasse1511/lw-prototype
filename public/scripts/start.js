@@ -15,4 +15,14 @@ $(document).ready(function () {
     $('#homeBtn').click(function() {
         window.location = '/'
     })
+
+    $('#contactBtn').click(function() {
+        window.location = '/contact'
+    })
+    $('#logoutBtn').click(function() {
+        window.location = '/login'
+    })
+    $('#aboutBtn').click(function() {
+        window.location = '/about'
+    })
 })

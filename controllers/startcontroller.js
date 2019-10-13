@@ -15,3 +15,15 @@ exports.getCreateOrder = function(req, res) {
 exports.getHome = function(req, res) {
     res.end('Hello world')
 }
+
+exports.getAbout = function(req, res) {
+    res.render('about');
+}
+
+exports.getContact = function(req, res) {
+    res.render('contact');
+}
+
+exports.logout = function(req, res) {
+    res.render('login')
+}

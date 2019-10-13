@@ -5,5 +5,9 @@ module.exports = function(app) {
 
 
     app.route('/search').get(startcontroller.getSearch);
-    app.route('/').get(startcontroller.getHome)
+
+    app.route('/contact').get(startcontroller.getContact);
+    app.route('/about').get(startcontroller.getAbout);
+    app.route('/logout').get(startcontroller.logout)
+
 }
