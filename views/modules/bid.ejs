@@ -1,0 +1,47 @@
+<div class="modal fade" id="bidModal" tabindex="-1" role="dialog" aria-labelledby="bidModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bidModalLabel">Afgiv bud til </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="bid-input" class="col-form-label">Pris:</label>
+                        <input type="text" class="form-control" id="bid-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Kommentarer:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="customBtn" data-dismiss="modal">Annullér</button>
+                <button type="button" class="customBtn" data-dismiss="modal" data-toggle="modal" data-target="#confirmModal">Afgiv Bud</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bekræft buddet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Detaljer om buddet</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="customBtn">Acceptér</button>
+                <button type="button" class="customBtn" data-dismiss="modal">Afvis</button>
+            </div>
+        </div>
+    </div>
+</div>
