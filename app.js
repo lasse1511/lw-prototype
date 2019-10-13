@@ -17,6 +17,8 @@ app.use(
 app.use(bodyparser.json());
 
 app.use(express.static("public/css"));
+app.use(express.static("public/img"));
+app.use(express.static("public/scripts"));
 
 require("./routes/start")(app);
 
