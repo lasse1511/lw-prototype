@@ -1,119 +1,97 @@
 <!DOCTYPE html>
 <html>
-<div class="container">
+<div class="container" id="container">
     <form>
         <div class="row">
-            <div class="col-md-3">
-                <div class=col->
-                    <label>Afhentnings adresse</label><br>
-                    <label>Landkode</label>
+            <div class="col-md-4">
+                <div class=col-6>
+                    <h5>Afhentnings</h5><br>
                 </div>
-                <div class=col->
-                    <input type="text" id="Pickup_Country" name="Pickup_Country" required minlength="2" maxlength="4"
-                        size="10">
+                <div class=col-4>
+                    </div>
+                   <div class=col-4></div> 
+                <div class=col-2>
+                    <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyle" placeholder="Landkode">
                 </div>
-                <div class=col->
-                    <label width=>Postnummer</label>
+                 <br>
+                <div class=col-2>
+                    <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyle" placeholder="Postnummer">
                 </div>
-                <div class=col->
-                    <input type="text" id="Pickup_Country" name="Pickup_Country" required minlength="4" maxlength="10"
-                        size="10">
-                </div>
+                <div class=col-2>
+                        <label>Dato</label>
+                    </div>
+                    <div class=col-2>
+                        <input type="date" id="Pickup_date" name="Pickup_date" class="inputStyle">
+                    </div>
+                    <div class=col-2>
+                        <label width=>Tidsinterval</label>
+                    </div>
+                    <div class=col-2>
+                        <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time" class="inputStyle">
+                        <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time" class="inputStyle">
+                    </div>
             </div>
-            <div class="col-md-3">                
-                <div class=col->
-                    <label >Afhentnings tidspunkt</label><br>
-                    <label>Dato</label>
+            <div class="col-md-4">
+                    <div class=col-6>
+                        <h5>Levering</h5><br>
+                    </div>
+                    <div class=col-4>
+                        </div>
+                       <div class=col-4></div> 
+                    <div class=col-2>
+                        <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyle" placeholder="Landkode">
+                    </div>
+                     <br>
+                    <div class=col-2>
+                        <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyle" placeholder="Postnummer">
+                    </div>
+                    <div class=col-2>
+                            <label>Dato</label>
+                        </div>
+                        <div class=col-2>
+                            <input type="date" id="Pickup_date" name="Pickup_date" class="inputStyle">
+                        </div>
+                        <div class=col-2>
+                            <label width=>Tidsinterval</label>
+                        </div>
+                        <div class=col-4>
+                            <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time" class="inputStyle">
+                            <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time" class="inputStyle">
+                        </div>
                 </div>
-                <div class=col->
-                    <input type="date" id="Pickup_date" name="Pickup_date">
-                </div>
-                <div class=col->
-                    <label width=>Tidsinterval</label>
-                </div>
-                <div class=col->
-                    <input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time">
-                    <input type="time" id="Pickup_End_Time" name="Pickup_End_Time">
-                </div>
-            </div>
 
-            <div class="col-md-3">                
+            <div class="col-md-4">
+                    <div class=col->
+                            <h5>Gods</h5><br>
+                        </div>
                 <div class=col->
-                    <label >Levering </label><br>
-                    <label>Landkode</label>
+                    <input type="text" id="Loading_meters" name="Loading_meters" placeholder="Ladmeter"
+                    class="inputStyle">
                 </div>
-                <div class=col->
-                    <input type="text" id="Deliver_Country" name="Deliver_Country" required minlength="2" maxlength="4"
-                        size="10">
-                </div>
-                <div class=col->
-                    <label>Postnummer</label>
-                </div>
-                <div class=col->
-                    <input type="text" id="Deliver_Country" name="Deliver_Country" required minlength="4" maxlength="10"
-                        size="10">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class=col->
-                    <label>Leverings tidspunkt</label><br>
-                    <label>Dato</label>
-                </div>
-                <div class=col->
-                    <input type="date" id="Deliver_date" name="Deliver_date">
-                </div>
-                <div class=col->
-                    <label width=>Tidsinterval</label>
-                </div>
-                <div class=col->
-                    <input type="time" id="Deliver_Start_Time" name="Deliver_Start_Time">
-                    <input type="time" id="Deliver_End_Time" name="Deliver_End_Time">
-                </div>
-            </div>
-            <div class="col-md-12">
                 <br>
-                
-            </div>
-
-            <div class="col-md-3">
                 <div class=col->
-                    <label>Gods</label><br>
-                    <label>Ladmeter</label>
+                        <label>Transporttype</label>
+                        <br>
+                        <select id="TransportTypeList">
+                                <option value="1">Vej</option>
+                                <option value="2">Skib</option>
+                                <option value="3">Fly</option>
+                            </select>
                 </div>
                 <div class=col->
-                    <input type="text" id="Loading_meters" name="Loading_meters" required minlength="2" maxlength="4"
-                        size="10">
-                </div>
-                <div class=col->
-                    <label>Postnummer</label>
-                </div>
-                <div class=col->
-                    <input type="text" id="PickupCountryCode" name="PickupCountryCode" required minlength="4"
-                        maxlength="10" size="10">
+                        <br>
+                        <label>Specielle</label>
+                        <br>
+                        <input type="radio" class="inputStyle" name="Special_Requirements" value="Box_Trailer" checked> Box trailer<br>
+                        <input type="radio" class="inputStyle" name="Special_Requirements" value="Colding_Trailer"> Køletrailer<br>
+                        <input type="radio" class="inputStyle" name="Special_Requirements" value="xx"> Other
                 </div>
 
             </div>
-            <div class="col-md-3">
-                    <label>Transporttype</label>
-                <div class=col->
-                    <select id="TransportTypeList">
-                        <option value="1">Vej</option>
-                        <option value="2">Skib</option>
-                        <option value="3">Fly</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label>Specielle</label>
-                <div class=col->
-                    <input type="radio" name="Special_Requirements" value="Box_Trailer" checked> Box trailer<br>
-                    <input type="radio" name="Special_Requirements" value="Colding_Trailer"> Køletrailer<br>
-                    <input type="radio" name="Special_Requirements" value="xx"> Other
-                </div>
-            </div>
+    
         </div>
 
-        <button type="submit" class="customBtn" id="searchbtn">Søg</button>
+        <button class="customBtn" id="searchbtn">Søg</button>
 
     </form>
     <div class="row">
