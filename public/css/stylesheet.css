@@ -16,6 +16,10 @@ html, body {
     float: right;
 }
 
+.rightBtn {
+    float: right;
+}
+
 .footerSize{      
     position: absolute;
     left: 0;
@@ -103,6 +107,57 @@ html, body {
     width: auto;
 }
 
-.leepwayul{
-    list-style-type: none;
+.btnShown {
+    visibility: visible;
+}
+
+.btnHidden {
+    display: none;
+    visibility: hidden;
+}
+
+
+.loginDiv{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    border: 1px solid #264A60;
+    box-shadow: 2px 3px #264A60;
+    background: white;
+
+}
+
+#upass{
+    width: 100%;
+}
+
+#uname{
+    width: 100%;
+}
+
+.customBtn{
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 4px;
+    border: 1px solid #264A60;
+    color: #264A60;
+    background: transparent;
+}
+
+.customBtn:hover{
+    color: whitesmoke;
+    background: #264A60;
+}
+
+.customTb{
+    padding: 5px;
+    border: 1px solid #264A60;
+    color: #264A60;
+    background: transparent;
 }
