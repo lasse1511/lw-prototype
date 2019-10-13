@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+  }
+
+.headerColor{
+    background-color: #264A60;
+    color: whitesmoke;
+}
+
+.headerSize{
+    padding: 15px;
+
+}
+
+.rightSpan{
+    float: right;
+}
+
+.footerSize{
+    flex-shrink: 0;
+}
