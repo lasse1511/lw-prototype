@@ -196,3 +196,7 @@ html, body {
     height: 400px;
     background-color: grey;
   }
+
+.tableBody {
+    padding-bottom: 20%
+}
