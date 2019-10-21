@@ -205,9 +205,11 @@ html, body {
 
 thead tr        { 
     height:60px;
-    background: lightgrey;
+    background: #264A60;
+    color: white;
     font-size:16px;
-    border: black 1px solid;
+    border: black solid;
+    border-width: medium;
   }
 #resulttable{
     width: 100%;
@@ -222,7 +224,7 @@ thead tr        {
     background-color: whitesmoke;
     border-style: solid;
     border-color: black;
-    border-width: thick;
+    border-width: medium;
 }
 #resulttable thead {
     background-color: whitesmoke;
