@@ -169,6 +169,7 @@ html, body {
     border: 1px solid #264A60;
     color: #264A60;
     background: transparent;
+    margin-top: 10px;
 }
 
 .customBtn:hover{
@@ -296,4 +297,17 @@ thead tr        {
     background-image: url("/userbtn_nt.png");
     background-repeat: repeat;
     position: absolute;
+}
+
+.formDiv{
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    border: 1px solid #264A60;
+    box-shadow: 2px 3px #264A60;
+    background: white;
+    margin-right: 175px !important;
+    padding-bottom: 15px;
 }
