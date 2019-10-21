@@ -48,7 +48,7 @@ html, body {
     min-width: 50%;
     max-width: 50%;
     min-height: 100%;
-    position: fixed;    
+        position: fixed;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,6 +73,11 @@ html, body {
     float: left;
     width: 50%;
   }
+
+.container {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
 
 .label {
     color: #264A60;
@@ -133,7 +138,7 @@ html, body {
 
 
 .loginDiv{
-    width: 30%;
+    width: 25%;
     height: 50%;
     position: absolute;
 	top:0;
@@ -144,6 +149,7 @@ html, body {
     border: 1px solid #264A60;
     box-shadow: 2px 3px #264A60;
     background: white;
+    margin-right: 175px !important;
 
 }
 
@@ -259,3 +265,11 @@ thead tr        {
     background-position: center bottom;
     background-repeat: no-repeat;
 } 
+
+
+.background_login{
+    width: auto;
+    max-width: 60%;
+    margin-bottom: 15%;
+    opacity: 0.5;
+}

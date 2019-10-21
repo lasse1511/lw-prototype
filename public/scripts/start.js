@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('.datepicker').datepicker();
+
 
     if (localStorage.getItem('loggedIn') == 'true') {
         $('#logoutBtn').addClass('btnShown')
@@ -21,22 +23,31 @@ $(document).ready(function () {
         $('#labeldiv').append('<label> new label </label>')
     })
 
+    if ($('#loginbackground')[0]) {
+        if (localStorage.getItem('who') == 'user') {
+            $('#loginbackground')[0].src = 'userbtn.png'
+        }
+        else {
+            $('#loginbackground')[0].src = 'truck.png'
+        }
+    }
 
     $('#userBtn').click(function () {
         if (localStorage.getItem('loggedIn') == 'true') {
             window.location = '/createorder'
         }
         else {
+            localStorage.setItem('who', 'user')
             window.location = '/login'
         }
     })
 
     $('#truckBtn').click(function () {
         if (localStorage.getItem('loggedIn') == 'true') {
-
             window.location = '/search'
         }
         else {
+            localStorage.setItem('who', 'truck')
             window.location = '/login'
         }
     })
@@ -62,11 +73,23 @@ $(document).ready(function () {
 
     $('#loginForm').click(function () {
         localStorage.setItem('loggedIn', 'true')
-        window.location = '/'
+        if (localStorage.getItem('who') == 'user') {
+            window.location = '/createorder'
+            localStorage.removeItem('who')
+        }
+        else if (localStorage.getItem('who') == 'truck') {
+            window.location = '/search'
+            localStorage.removeItem('who')
+
+        }
+        else {
+            window.location = '/'
+        }
+
     })
 
 
-    if($('#Pickup_Company')[0]){
+    if ($('#Pickup_Company')[0]) {
         $('#Pickup_Company').focus();
     }
     $('#row1').click(function () {
