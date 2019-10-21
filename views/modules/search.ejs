@@ -2,7 +2,8 @@
 <html>
 <div class="background_truck"> </div>
 <div class="container" id="container">
-    <!--    
+    <div class="formDiv container">
+        <!--    
             <% if (typeof successMessage != 'undefined' && successMessage) { %>
             <div class="alert alert-success">
                 <%- successMessage %>
@@ -12,113 +13,115 @@
                 <%- errorMessage %>
             </div>
             <% } %> -->
-    <form>
+        <form>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class=col-6>
+                        <h5>Afhentning</h5><br>
+                    </div>
+                    <div class=col-4>
+                    </div>
+                    <div class=col-4></div>
+                    <div class=col-2>
+                        <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
+                            placeholder="Landekode">
+                    </div>
+                    <br>
+                    <div class=col-2>
+                        <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
+                            placeholder="Postnummer">
+                    </div>
+                    <div class=col-2>
+                        <label>Dato</label>
+                    </div>
+                    <div class=col-2>
+                        <input type="date" id="Pickup_date" name="Pickup_date" class="inputStyleSearch">
+                    </div>
+                    <div class=col-2>
+                        <label width=>Tidsinterval</label>
+                    </div>
+                    <div class=col-2>
+                        <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time"
+                            class="inputStyleSearch">
+                        <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time"
+                            class="inputStyleSearch">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class=col-6>
+                        <h5>Levering</h5><br>
+                    </div>
+                    <div class=col-4>
+                    </div>
+                    <div class=col-4></div>
+                    <div class=col-2>
+                        <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
+                            placeholder="Landekode">
+                    </div>
+                    <br>
+                    <div class=col-2>
+                        <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
+                            placeholder="Postnummer">
+                    </div>
+                    <div class=col-2>
+                        <label>Dato</label>
+                    </div>
+                    <div class=col-2>
+                        <input type="date" id="Pickup_date" name="Pickup_date" class="inputStyleSearch">
+                    </div>
+                    <div class=col-2>
+                        <label width=>Tidsinterval</label>
+                    </div>
+                    <div class=col-4>
+                        <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time"
+                            class="inputStyleSearch">
+                        <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time"
+                            class="inputStyleSearch">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class=col->
+                        <h5>Gods</h5><br>
+                    </div>
+                    <div class=col->
+                        <input type="text" id="Loading_meters" name="Loading_meters" placeholder="Ladmeter"
+                            class="inputStyleSearch">
+                    </div>
+                    <br>
+                    <div class=col->
+                        <label>Transporttype</label>
+                        <br>
+                        <select id="TransportTypeList">
+                            <option value="1">Vej</option>
+                            <option value="2">Skib</option>
+                            <option value="3">Fly</option>
+                        </select>
+                    </div>
+                    <div class=col->
+                        <br>
+                        <label>Specielle</label>
+                        <br>
+                        <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="Box_Trailer"
+                            checked> Box
+                        trailer<br>
+                        <input type="radio" class="inputStyleSearch" name="Special_Requirements"
+                            value="Colding_Trailer">
+                        Køletrailer<br>
+                        <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="xx"> Other
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </form>
         <div class="row">
-            <div class="col-md-4">
-                <div class=col-6>
-                    <h5>Afhentning</h5><br>
-                </div>
-                <div class=col-4>
-                </div>
-                <div class=col-4></div>
-                <div class=col-2>
-                    <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
-                        placeholder="Landekode">
-                </div>
-                <br>
-                <div class=col-2>
-                    <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
-                        placeholder="Postnummer">
-                </div>
-                <div class=col-2>
-                    <label>Dato</label>
-                </div>
-                <div class=col-2>
-                    <input type="date" id="Pickup_date" name="Pickup_date" class="inputStyleSearch">
-                </div>
-                <div class=col-2>
-                    <label width=>Tidsinterval</label>
-                </div>
-                <div class=col-2>
-                    <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time"
-                        class="inputStyleSearch">
-                    <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time"
-                        class="inputStyleSearch">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=col-6>
-                    <h5>Levering</h5><br>
-                </div>
-                <div class=col-4>
-                </div>
-                <div class=col-4></div>
-                <div class=col-2>
-                    <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
-                        placeholder="Landekode">
-                </div>
-                <br>
-                <div class=col-2>
-                    <input type="text" id="Pickup_Country" name="Pickup_Country" class="inputStyleSearch"
-                        placeholder="Postnummer">
-                </div>
-                <div class=col-2>
-                    <label>Dato</label>
-                </div>
-                <div class=col-2>
-                    <input type="date" id="Pickup_date" name="Pickup_date" class="inputStyleSearch">
-                </div>
-                <div class=col-2>
-                    <label width=>Tidsinterval</label>
-                </div>
-                <div class=col-4>
-                    <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time"
-                        class="inputStyleSearch">
-                    <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time"
-                        class="inputStyleSearch">
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class=col->
-                    <h5>Gods</h5><br>
-                </div>
-                <div class=col->
-                    <input type="text" id="Loading_meters" name="Loading_meters" placeholder="Ladmeter"
-                        class="inputStyleSearch">
-                </div>
-                <br>
-                <div class=col->
-                    <label>Transporttype</label>
-                    <br>
-                    <select id="TransportTypeList">
-                        <option value="1">Vej</option>
-                        <option value="2">Skib</option>
-                        <option value="3">Fly</option>
-                    </select>
-                </div>
-                <div class=col->
-                    <br>
-                    <label>Specielle</label>
-                    <br>
-                    <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="Box_Trailer"
-                        checked> Box
-                    trailer<br>
-                    <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="Colding_Trailer">
-                    Køletrailer<br>
-                    <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="xx"> Other
-                </div>
-
-            </div>
-
+            <div class="col-md-10"></div>
+            <button class="customBtn" id="searchbtn">Søg</button>
         </div>
-
-
-
-    </form>
-    <div class="row">
-        <div class="col-md-10"></div>
-        <button class="customBtn" id="searchbtn">Søg</button>
     </div>
     <br>
     <div class="row">
