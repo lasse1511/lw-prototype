@@ -232,6 +232,20 @@ thead tr        {
 #resulttable tbody:hover {
     background-color: lightgray;
 }
+#frontpageHeader {
+    text-align: center;
+}
+
+#userbtnlabel{
+    float: left;
+    border: 1px solid #264A60;
+    box-shadow: 2px 3px #264A60;
+}
+#truckbtnlabel{
+    float: left;
+    border: 1px solid #264A60;
+    box-shadow: 2px 3px #264A60;
+}
 
 /* #background{
     position:absolute;
