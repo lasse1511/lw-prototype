@@ -212,14 +212,17 @@ thead tr        {
     padding: 7px; 
     border: black 1px solid;
 }
-#resulttable tr {
+#resulttable tbody {
     background-color: whitesmoke;
 }
-#resulttable tr:hover {
+#resulttable thead {
+    background-color: whitesmoke;
+}
+#resulttable tbody:hover {
     background-color: lightgray;
 }
 
-#background{
+/* #background{
     position:absolute;
     z-index:0;
     background:white;
@@ -230,4 +233,29 @@ thead tr        {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); 
-}
+} */
+ .truckbackground {
+    z-index:0;
+    background:white;
+    display:block;
+    min-height:50%; 
+    min-width:50%;
+    left: 50%;
+    top: 50%;
+    background-image: url("/truck_nt.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+.userbtnbackground {
+    z-index:0;
+    background:white;
+    display:block;
+    min-height:50%; 
+    min-width:50%;
+    left: 50%;
+    top: 50%; 
+    background-image: url("/userbtn_nt.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+} 

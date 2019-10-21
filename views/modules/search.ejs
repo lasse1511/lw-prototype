@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
-<div class="container" id="container">
 
-      
-        <!-- 
-              <div id="background">
-                <img src="truck.png">
-                </div>
-            
+<div class="container truckbackground" id="container">
+    <!--    
             <% if (typeof successMessage != 'undefined' && successMessage) { %>
             <div class="alert alert-success">
                 <%- successMessage %>
@@ -47,7 +42,8 @@
                 <div class=col-2>
                     <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time"
                         class="inputStyleSearch">
-                    <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time" class="inputStyleSearch">
+                    <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time"
+                        class="inputStyleSearch">
                 </div>
             </div>
             <div class="col-md-4">
@@ -78,7 +74,8 @@
                 <div class=col-4>
                     <label>Fra</label><input type="time" id="Pickup_Start_Time" name="Pickup_Start_Time"
                         class="inputStyleSearch">
-                    <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time" class="inputStyleSearch">
+                    <label>Til</label><input type="time" id="Pickup_End_Time" name="Pickup_End_Time"
+                        class="inputStyleSearch">
                 </div>
             </div>
 
@@ -104,7 +101,8 @@
                     <br>
                     <label>Specielle</label>
                     <br>
-                    <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="Box_Trailer" checked> Box
+                    <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="Box_Trailer"
+                        checked> Box
                     trailer<br>
                     <input type="radio" class="inputStyleSearch" name="Special_Requirements" value="Colding_Trailer">
                     Køletrailer<br>
@@ -128,6 +126,7 @@
         <table class='leepwaytable table' id='resulttable'>
 
         </table>
+        <br>
         <% } else { %>
         <label>Indtast søgeparametre</label>
         <% } %>
