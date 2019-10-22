@@ -13,7 +13,7 @@ exports.getCreateOrder = function (req, res) {
 }
 
 exports.getLogin = function (req, res) {
-    res.render('Login');
+    res.render('login');
 }
 
 exports.getRegister = function (req, res) {
